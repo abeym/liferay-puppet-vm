@@ -5,19 +5,19 @@
 class { 'vmbuilder' : 
   ############### DB config 
 
-  #db_user              => "liferay",
-  #db_password          => "D3P4ssw0rd",
-  #db_name              => "lportal",
+  db_user              => "liferay",
+  db_password          => "D3P4ssw0rd",
+  db_name              => "lportal",
 
   ############### To ensure the clock is synchronized 
 
-  #timzone              => "Europe/Dublin",
+  timzone              => "US/New York",
 
   ############### Liferay configuration 
 
-  #liferay_user         => "liferay",
-  #liferay_group        => "www",
-  #install_path         => "/opt",
+  liferay_user         => "liferay",
+  liferay_group        => "www",
+  install_path         => "/opt",
 
   ############### Liferay Databse to use 
   # Possibel  values are: mysql, postgresql
@@ -38,12 +38,12 @@ class { 'vmbuilder' :
   ################ Development mode
   # Default to false
 
-  #liferay_dev          => true,
+  liferay_dev          => true,
 
   ############### Tomcat info 
 
-  #xmx                  => "1024",
-  #permsize             => "256",
+  xmx                  => "1024",
+  permsize             => "256",
 
   ############### Enable firewall. false by default
 
@@ -66,7 +66,7 @@ class { 'vmbuilder' :
   # By default will not install a http server
   # possible values = apache2 | nginx
 
-  #httpserver           => "apache2",
+  httpserver           => "apache2",
   #httpserver           => "nginx",
 
   ############### Install External Tools

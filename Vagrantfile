@@ -92,7 +92,7 @@ Vagrant.configure(2) do |config|
       # meminfo shows KB and we need to convert to MB
       vb.memory = `grep 'MemTotal' /proc/meminfo | sed -e 's/MemTotal://' -e 's/ kB//'`.to_i / 1024 / 4
     else # sorry Windows folks, I can't help you
-      vb.cpus = 4
+      vb.cpus = 2
       vb.memory = 4096
     end
 
