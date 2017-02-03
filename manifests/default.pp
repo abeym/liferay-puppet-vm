@@ -28,6 +28,12 @@ class { 'vmbuilder' :
   ############### Install Liferay from local archive 
 
   #liferay_zip_filename => "liferay-dxp-digital-enterprise-tomcat-7.0-ga1-20160617092557801.zip",
+
+
+  ############### abey - liferay download -> the actual url is ->> $base_url/$liferay_version/$liferay_zip_filename
+  #liferay_zip_filename   => "liferay-ce-portal-tomcat-7.0-ga3-20160804222206210.zip",
+  #liferay_version        => "7.0.2%20GA3",
+  #base_url               => "http://downloads.sourceforge.net/project/lportal/Liferay%20Portal",
   
   #Liferay folder name inside zip archive
   #liferay_folder       => "liferay-dxp-digital-enterprise-7.0-ga1",

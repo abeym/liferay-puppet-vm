@@ -45,3 +45,16 @@ openoffice.server.enabled=<%=@external_tools%>
 
 #Xuggler
 xuggler.enabled=<%=@external_tools%>
+
+# disable default startup config
+#we should not get 'Change password' screen.
+passwords.default.policy.change.required=false
+# To turn off the terms and conditions
+terms.of.use.required=false
+# deactivate the wizard for fresh installation
+setup.wizard.enabled=false
+#
+# Set this to true to enable reminder queries that are used to help reset a
+# user's password.
+#
+users.reminder.queries.enabled=false
